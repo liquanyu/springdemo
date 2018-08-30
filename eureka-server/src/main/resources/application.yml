@@ -1,8 +1,24 @@
-#eureka.client.serviceUrl.defaultZone=http://localhost:${server.port}/eureka/
-#eureka.client.registerWithEureka=false
-#eureka.client.fetchRegistry=false
-
 server:
   port: 10000
+eureka:
+  instance:
+    hostname: localhost
+  server:
+    enable-self-preservation: false      # 关闭自我保护模式（默认为打开）
+    eviction-interval-timer-in-ms: 5000  # 续期时间，即扫描失效服务的间隔时间（缺省为60*1000ms）
+  client:
+    register-with-eureka: false #注册中心提供单一的注册服务功能，不提供其他接口服务能力
+    fetch-registry: false  #表示是否从Eureka Server 中获得注册信息，默认为true。目前是单点Eureka Server 所以不需要和其他Eureka Server 节点做同步，所以为false
+    service-url:
+      defaultZone: http://root:123456@${eureka.instance.hostname}:${server.port}/eureka/
+spring:
+  security:
+    basic:
+      enabled: true
+    user:
+      name: root
+      password: 123456
+
+
 
 

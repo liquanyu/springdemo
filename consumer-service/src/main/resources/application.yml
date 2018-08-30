@@ -1,0 +1,10 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: consumer-service
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root:123456@localhost:10000/eureka/
