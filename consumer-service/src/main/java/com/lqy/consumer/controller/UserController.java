@@ -22,7 +22,7 @@ public class UserController {
     @GetMapping("/getUserOrder/{id}")
     public OrderModel getUserOrder(@PathVariable Integer id)
     {
-        String url = "http://provider-service/getOrderById/1";
+        String url = "http://provider-service/getOrderById/"+id;
         OrderModel user = restTemplate.getForObject(url,OrderModel.class);
         return  user;
     }
