@@ -1,6 +1,7 @@
 package com.lqy.provider.controller;
 
 import com.lqy.provider.model.OrderModel;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,6 +11,9 @@ import java.util.Date;
 @RestController
 public class OrderController {
 
+    @Value("${server.port}")
+    private String port;
+
     @GetMapping("/getOrderById/{id}")
     public OrderModel  getOrderByUserId(@PathVariable Integer id)
     {
@@ -17,6 +21,9 @@ public class OrderController {
         model.setId(id);
         model.setName("Jome");
         model.setBirth(new Date());
+
+        System.out.println("port = " + port);
+
         return model;
     }
 
