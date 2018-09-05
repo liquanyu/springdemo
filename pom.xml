@@ -13,6 +13,7 @@
         <module>provider-service</module>
         <module>consumer-service</module>
         <module>consumer-service-feign</module>
+        <module>hystrix-service</module>
     </modules>
 
     <properties>
