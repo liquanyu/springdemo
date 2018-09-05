@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableDiscoveryClient
-@EnableHystrix
+//@EnableHystrix
 public class ConsumerServiceApplication {
 
 	@Bean
