@@ -9,11 +9,11 @@ import javax.jms.Destination;
 
 @Component
 public class JMSProducer {
-    @Autowired
-    private JmsMessagingTemplate jmsMessagingTemplate;
-
-    public void send(String message) {
-        Destination destination = new ActiveMQQueue("mymessage");
-        jmsMessagingTemplate.convertAndSend(destination, message);
-    }
+//    @Autowired
+//    private JmsMessagingTemplate jmsMessagingTemplate;
+//
+//    public void send(String message) {
+//        Destination destination = new ActiveMQQueue("mymessage");
+//        jmsMessagingTemplate.convertAndSend(destination, message);
+//    }
 }

@@ -28,11 +28,11 @@ public class UserController {
     @GetMapping("/getUserOrder/{id}")
     public OrderModel getUserOrder(@PathVariable Integer id)
     {
-        //String url = "http://provider-service/getOrderById/"+id;
+        String url = "http://provider-service/getOrderById/"+id;
 
-        ServiceInstance serviceInstance = loadBalancerClient.choose("provider-service");
-        String url = "http://" + serviceInstance.getHost() + ":" + serviceInstance.getPort() + "/getOrderById/"+id;
-        System.out.println(url);
+//        ServiceInstance serviceInstance = loadBalancerClient.choose("provider-service");
+//        String url = "http://" + serviceInstance.getHost() + ":" + serviceInstance.getPort() + "/getOrderById/"+id;
+//        System.out.println(url);
         OrderModel user = restTemplate.getForObject(url,OrderModel.class);
 
         return  user;

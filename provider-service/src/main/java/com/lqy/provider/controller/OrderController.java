@@ -32,10 +32,10 @@ public class OrderController {
         return model;
     }
 
-    @GetMapping("/sendMessage")
-    public String  sendMessage(String msg)
-    {
-        jp.send(msg);
-        return "success";
-    }
+//    @GetMapping("/sendMessage")
+//    public String  sendMessage(String msg)
+//    {
+//        jp.send(msg);
+//        return "success";
+//    }
 }

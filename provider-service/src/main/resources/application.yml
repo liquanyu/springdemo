@@ -5,14 +5,14 @@ spring:
   application:
     name: provider-service
 
-  activemq:
-    broker-url: tcp://192.168.0.111:61616
-    user: amdin
-    password: admin
-    pool:
-      enabled: false
-    packages:
-      trust-all: false
+#  activemq:
+#    broker-url: tcp://192.168.0.111:61616
+#    user: amdin
+#    password: admin
+#    pool:
+#      enabled: false
+#    packages:
+#      trust-all: false
 
 eureka:
   client:
