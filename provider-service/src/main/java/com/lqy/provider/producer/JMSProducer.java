@@ -14,6 +14,6 @@ public class JMSProducer {
 //
 //    public void send(String message) {
 //        Destination destination = new ActiveMQQueue("mymessage");
-//        jmsMessagingTemplate.convertAndSend(destination, message);
+//        jmsMessagingTemplate.convertAnd(destination, message);
 //    }
 }

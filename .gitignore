@@ -2,5 +2,5 @@
 .idea/workspace.xml
 target/
 *.iml
-springcloud.iml
+/springcloud.iml
 .idea/
