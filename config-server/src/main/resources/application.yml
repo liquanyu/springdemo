@@ -1,0 +1,13 @@
+server:
+  port: 7070
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          username: liquanyu
+          password: quan527317488
+          uri: https://github.com/liquanyu/spring-config
