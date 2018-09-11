@@ -16,6 +16,7 @@
         <module>hystrix-service</module>
         <module>zull-service</module>
         <module>config-server</module>
+        <module>spring-config</module>
     </modules>
 
     <properties>
