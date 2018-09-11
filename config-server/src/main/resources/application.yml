@@ -11,3 +11,8 @@ spring:
           username: liquanyu
           password: quan527317488
           uri: https://github.com/liquanyu/spring-config
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root:123456@localhost:10001/eureka/
